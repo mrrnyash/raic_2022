@@ -3,6 +3,8 @@ from stream_wrapper import StreamWrapper
 class ActionOrder:
     """Order to perform an action for unit"""
 
+    Pickup = None
+
     @staticmethod
     def read_from(stream: StreamWrapper) -> "ActionOrder":
         """Read ActionOrder from input stream
